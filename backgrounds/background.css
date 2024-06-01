@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+h1{
+    color:darkblue;
+}
+
 /*
     The background-color property specifies the background color of an element.
 */
@@ -30,7 +34,8 @@ main{
 
 
 /*
-
+    background-repeat property used to control how background image
+    is repeated or not, horizontally or vertically.
 */
 #bg-repeat{
     margin: 0 auto;
@@ -39,12 +44,53 @@ main{
     height: 200px;
     background-image: url("https://images.unsplash.com/photo-1716980197262-ce400709bf0d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat; /* show background image only once */
-    
+
     /* repeat-x -> repeat horizontally | repeat-y -> repeat virtically*/
 }
 
 
+/*
+    The background-position property is used to specify the position of the background image.
 
+    position value options which may be combined
+    top | center | bottom | left | right
+*/
+#bg-position{
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1716980197262-ce400709bf0d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat; /* show background image only once */
+    background-position: left center;
+}
+
+
+/*
+    The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+*/
+#attachement{
+    margin: 0 auto;
+    padding: 10px;
+    height: 700px;
+    background-image: url("https://images.unsplash.com/photo-1716980197262-ce400709bf0d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: repeat-x;
+    background-attachment:fixed;
+}
+
+
+#shorthand{
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    background: rebeccapurple url("https://images.unsplash.com/photo-1716980197262-ce400709bf0d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat right top fixed;
+    background-blend-mode: overlay;
+}
+
+footer{
+    height: 800px;
+}
 
 
 
