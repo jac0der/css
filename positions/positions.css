@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/*
+    An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page: 
+*/
+div.static{
+    position: static;
+    margin: 0 auto;
+    padding: 5px;
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+}
+
+
+/*
+    An element with position: relative; is positioned relative to its normal position.
+*/
+.relative{
+    position: relative;
+    left:50px;
+    margin: 0 auto;
+    padding: 8px;
+    width: 500px;
+    height: 100px;
+    background-color:blueviolet;
+}
+
+
+/*
+    An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+*/
+.fixed{
+    position: fixed;
+    right:70px;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 8px;
+    width: 500px;
+    height: 100px;
+    background-color:brown;
+}
+
+
+/*
+    parent/descendant which must be positioned relative
+    to be used by child element which will be positioned
+    absolute within parent. otherwise child element is 
+    absolutely positioned based on the body.
+*/
+.relabs{
+    position: relative;
+    margin: 50px auto 0 auto;
+    padding: 8px;
+    width: 500px;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+/*
+    An element with position: absolute; is positioned relative to the nearest positioned ancestor.
+
+    However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+*/
+.absolute{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+
+
+/*
+    An element with position: sticky; is positioned based on the user's scroll position.
+*/
+.sticky{
+    position:sticky;
+    top: 0;
+    width: 500px;
+    height: 300px;
+    background-color:cornflowerblue;
+}
+
+
+
+section{
+    height: 1000px;
+}
